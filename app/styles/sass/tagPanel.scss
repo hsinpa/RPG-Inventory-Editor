@@ -1,0 +1,55 @@
+.tagPanel {
+	border: none;
+	overflow: none;
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 12em;
+	padding : 0 0 0 0;
+	margin-bottom: 0;
+	text-align: center;
+	background-color: #a3b1b2;
+
+		h5 {
+			background-color: #a3b1b2;
+			width:100%;
+			padding: 0.2em 0em;
+			margin-bottom: 0em;
+			color : #ecf0f1;
+		}
+		article {
+			display: none;
+			background-color: #bdc3c7;
+			.row input, .row a {
+				margin-bottom: 0;
+				height:1.5em;
+			}
+		}
+}
+
+.tagPanel li, .columnRow li {
+	background-color: #34495e;
+	padding: 0.1em 0.8em;
+	list-style-type:  none;
+	display: inline;
+	color: white;
+	margin-right: 0.1em;
+}
+
+.remarkPanel {
+	display: none;
+	margin-bottom: 0;
+	width: 20em;
+	position: fixed;
+	right : 12em;
+	background-color: #bdc3c7;
+	bottom: 0;
+	h4 {
+		color : #34495e;
+		text-align: center;
+	}
+	input[type="submit"] {
+		margin-bottom: -1em;
+	}
+
+}

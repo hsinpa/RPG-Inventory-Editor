@@ -1,0 +1,42 @@
+#inventoryEditor {
+	.row{
+		max-width: 100%;
+
+		.tabs {
+			display: inline-block;
+		}
+
+		label {
+			display: inline;
+			input[type="text"] {
+				width:20em;
+				display: inline;
+			}
+		}
+
+		img {
+			margin : 0 0 0 1em;
+			display: inline;
+			width: 2em;
+		}
+		.tableContainer {
+			overflow-x:auto;
+			table {
+				table-layout: fixed;
+				th,td {
+				min-width:8em; 
+				padding-bottom: 0px;
+				}
+				th input[type="text"]{
+					color:#34495e;
+					font-weight: 700;
+				}
+				input[type="text"] {
+					border: none;
+					overflow: none;
+				}
+			}
+		}
+	}
+}
+body {overflow-y:hidden;}

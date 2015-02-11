@@ -1,0 +1,51 @@
+/* line 2, ../sass/main.scss */
+#inventoryEditor .row {
+  max-width: 100%;
+}
+/* line 5, ../sass/main.scss */
+#inventoryEditor .row .tabs {
+  display: inline-block;
+}
+/* line 9, ../sass/main.scss */
+#inventoryEditor .row label {
+  display: inline;
+}
+/* line 11, ../sass/main.scss */
+#inventoryEditor .row label input[type="text"] {
+  width: 20em;
+  display: inline;
+}
+/* line 17, ../sass/main.scss */
+#inventoryEditor .row img {
+  margin: 0 0 0 1em;
+  display: inline;
+  width: 2em;
+}
+/* line 22, ../sass/main.scss */
+#inventoryEditor .row .tableContainer {
+  overflow-x: auto;
+}
+/* line 24, ../sass/main.scss */
+#inventoryEditor .row .tableContainer table {
+  table-layout: fixed;
+}
+/* line 26, ../sass/main.scss */
+#inventoryEditor .row .tableContainer table th, #inventoryEditor .row .tableContainer table td {
+  min-width: 8em;
+  padding-bottom: 0px;
+}
+/* line 30, ../sass/main.scss */
+#inventoryEditor .row .tableContainer table th input[type="text"] {
+  color: #34495e;
+  font-weight: 700;
+}
+/* line 34, ../sass/main.scss */
+#inventoryEditor .row .tableContainer table input[type="text"] {
+  border: none;
+  overflow: none;
+}
+
+/* line 42, ../sass/main.scss */
+body {
+  overflow-y: hidden;
+}

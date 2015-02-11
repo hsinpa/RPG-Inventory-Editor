@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>RPG IE</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="../bower_components/foundation/css/foundation.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/main.css -->
+    <link rel="stylesheet" href="styles/stylesheets/jquery-ui.min.css">
+    <link rel="stylesheet" href="styles/stylesheets/jquery-ui.structure.min.css">
+    <link rel="stylesheet" href="styles/stylesheets/jquery-ui.theme.min.css">
+    <link rel="stylesheet" href="styles/stylesheets/main.css">
+    <link rel="stylesheet" href="styles/stylesheets/tagPanel.css">
+    <!-- endbuild -->
+
+  </head>
+  <body>
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+    <nav class="top-bar" data-topbar role="navigation">
+      <ul class="title-area">
+        <li class="name">
+          <h1><a href="#">RPG Inventory Editor</a></h1>
+        </li>
+         <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
+        <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
+      </ul>
+
+      <section class="top-bar-section">
+        <!-- Right Nav Section -->
+        <ul class="right">
+          <li class="active clearAll"><a href="#">Clear ALL</a></li>
+          <li class="has-dropdown">
+            <a href="#">Setting</a>
+            <ul class="dropdown">
+              <li class="active"><a href="#" download="rpgInventory.json" class="output" format="json">Output JSON</a></li>
+              <li><a href="#" class="output" download="rpgInventory.xml" format="xml">Output XML</a></li>
+            </ul>
+          </li>
+        </ul>
+      </section>
+    </nav>
+
+    <div id="inventoryEditor">
+    </div>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='//www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="../bower_components/modernizr/modernizr.js"></script>
+    <script src="../bower_components/jquery/dist/jquery.js"></script>
+    <script src="../bower_components/fastclick/lib/fastclick.js"></script>
+    <script src="../bower_components/jquery.cookie/jquery.cookie.js"></script>
+    <script src="../bower_components/jquery-placeholder/jquery.placeholder.js"></script>
+    <script src="../bower_components/foundation/js/foundation.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+
+        <!-- build:js scripts/main.js -->
+        <script src="lib/hammer.min.js"></script>
+        <script src="lib/jquery-ui.min.js"></script>
+
+        <script src="scripts/Model.js"></script>
+        <script src="scripts/loadData.js"></script>
+        <script src="scripts/output.js"></script>
+        <script src="scripts/tagHandler.js"></script>
+        <script src="scripts/EventHandler.js"></script>
+        <script src="scripts/App.js"></script>
+        <script>
+        var currentTable;
+        function refresh() {
+          $(document).foundation();
+        }
+
+         App(EventHandler, tagHandler, Model, output,loadData);
+        </script>
+        <!-- endbuild -->
+</body>
+</html>
