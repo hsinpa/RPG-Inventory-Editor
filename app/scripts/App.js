@@ -6,7 +6,10 @@ var App = (function(EventHandler, tagHandler, Model, loadData, output, jQuery) {
 		Model.getMain(function () {
 			loadData.loadTable();
 			loadData.loadColumn();
-			Model.getPanel();
+			
+			Model.getPanel( function () {
+				loadData.loadTag();
+			});
 		});
 
 		EventHandler();

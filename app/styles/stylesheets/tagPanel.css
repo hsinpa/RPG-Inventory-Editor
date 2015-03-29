@@ -1,17 +1,27 @@
 /* line 1, ../sass/tagPanel.scss */
+.tag, .tagPanel li {
+  background-color: #34495e;
+  padding: 0.1em 0.8em;
+  list-style-type: none;
+  text-align: center;
+  color: white;
+  margin: 0.1em 0.1em 0 0;
+}
+
+/* line 9, ../sass/tagPanel.scss */
 .tagPanel {
   border: none;
   overflow: none;
   position: fixed;
   right: 0;
   bottom: 0;
-  width: 12em;
+  width: 14em;
   padding: 0 0 0 0;
   margin-bottom: 0;
   text-align: center;
   background-color: #a3b1b2;
 }
-/* line 13, ../sass/tagPanel.scss */
+/* line 21, ../sass/tagPanel.scss */
 .tagPanel h5 {
   background-color: #a3b1b2;
   width: 100%;
@@ -19,43 +29,37 @@
   margin-bottom: 0em;
   color: #ecf0f1;
 }
-/* line 20, ../sass/tagPanel.scss */
+/* line 28, ../sass/tagPanel.scss */
 .tagPanel article {
   display: none;
   background-color: #bdc3c7;
 }
-/* line 23, ../sass/tagPanel.scss */
+/* line 31, ../sass/tagPanel.scss */
 .tagPanel article .row input, .tagPanel article .row a {
   margin-bottom: 0;
-  height: 1.5em;
 }
 
-/* line 30, ../sass/tagPanel.scss */
-.tagPanel li, .columnRow li {
-  background-color: #34495e;
-  padding: 0.1em 0.8em;
-  list-style-type: none;
-  display: inline;
-  color: white;
-  margin-right: 0.1em;
+/* line 37, ../sass/tagPanel.scss */
+.tagPanel li {
+  display: inline-block;
 }
 
-/* line 39, ../sass/tagPanel.scss */
+/* line 43, ../sass/tagPanel.scss */
 .remarkPanel {
   display: none;
   margin-bottom: 0;
   width: 20em;
   position: fixed;
-  right: 12em;
+  right: 14em;
   background-color: #bdc3c7;
   bottom: 0;
 }
-/* line 47, ../sass/tagPanel.scss */
+/* line 51, ../sass/tagPanel.scss */
 .remarkPanel h4 {
   color: #34495e;
   text-align: center;
 }
-/* line 51, ../sass/tagPanel.scss */
+/* line 55, ../sass/tagPanel.scss */
 .remarkPanel input[type="submit"] {
   margin-bottom: -1em;
 }

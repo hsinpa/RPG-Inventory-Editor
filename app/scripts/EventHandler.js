@@ -1,4 +1,4 @@
-"use strict"
+"use strict";
 var EventHandler = (function(Model, loadData, output, $) {
 	var rowNum, columnNum, rows, column, previousName;
 
@@ -14,7 +14,6 @@ var EventHandler = (function(Model, loadData, output, $) {
 
 	function save() {
 		updateTableInfo();
-		currentTable = $(".tab-title.active a").html();
 		Model.saveTable();
 		Model.saveColumn();
 		Model.saveData();
@@ -81,7 +80,7 @@ var EventHandler = (function(Model, loadData, output, $) {
 			save();
 		});
 		// ================================ OUTPUT ===============================
-		//JSON
+		//JSON || XML
 		$('.output').on('click', function(e) {
 			var data = ($(this).attr("format") === "json") ? output.toJSON() : output.toXML(),
 				downloadResult = "text/"+$(this).attr("format")+";charset=utf-8," + encodeURIComponent(data);

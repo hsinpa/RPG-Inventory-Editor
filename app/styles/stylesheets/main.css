@@ -21,31 +21,22 @@
   display: inline;
   width: 2em;
 }
-/* line 22, ../sass/main.scss */
-#inventoryEditor .row .tableContainer {
-  overflow-x: auto;
-}
-/* line 24, ../sass/main.scss */
+/* line 23, ../sass/main.scss */
 #inventoryEditor .row .tableContainer table {
   table-layout: fixed;
 }
-/* line 26, ../sass/main.scss */
+/* line 25, ../sass/main.scss */
 #inventoryEditor .row .tableContainer table th, #inventoryEditor .row .tableContainer table td {
   min-width: 8em;
   padding-bottom: 0px;
 }
-/* line 30, ../sass/main.scss */
+/* line 29, ../sass/main.scss */
 #inventoryEditor .row .tableContainer table th input[type="text"] {
   color: #34495e;
   font-weight: 700;
 }
-/* line 34, ../sass/main.scss */
+/* line 33, ../sass/main.scss */
 #inventoryEditor .row .tableContainer table input[type="text"] {
   border: none;
   overflow: none;
-}
-
-/* line 42, ../sass/main.scss */
-body {
-  overflow-y: hidden;
 }
